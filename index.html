@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>newsletter</title> 
+	<meta charset="UTF-8"> <!--gives information about the website/blog-->
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML, CSS,landing,resolutions,template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script> 
+	<style type="text/css"> 
+		.wrapper{
+			background-color: grey;
+			width:100%; 
+			table-layout: fixed;
+		} 
+		.table{
+			max-width: 600px;
+			width: 100%; 
+			background-color: #FDDA0D;/*yellow*/
+			border-spacing: 0px; /*no surrounding border spaces*/ 
+			margin-top: 0px; /*top and bottom make it 0 left,right decide by yourselves*/
+			margin-bottom:0px; 
+			margin-left:auto;
+			margin-right: auto;
+
+		} 
+		.bannerimage{
+			background-image: url("food3.jpg"); 
+			max-width: 600px; /*more than that,grey borders will be encountered*/
+			height: 600px; 
+			border-spacing: 0px;
+			background-repeat: none; 
+			background-size: cover;
+			text-align: center; 
+			text-decoration: none; 
+			color: white; 
+			cursor: pointer;
+		} 
+		.btn{
+			background-color:#FF5733; /*creates a background behind the text*/
+			color:black;
+			padding: 0.8rem 1rem; /*top and bottom,left and right*//*ideal size for creating a button*//*also,padding is the dist between the text and its bg colour borderrs*/
+			text-decoration: none; /*remove the underlines from the link/we get the plain text ,colour might change*/
+			border-radius:3%; /*bends the edges of the bg color aby a radius of 5px,50% represents a circle with a squiare box and oval with a rectangular box*/
+		}  
+		.btn:hover{
+			padding-top:1rem;
+			padding-bottom:1rem; 
+			padding-left:1.5rem; 
+			padding-right:1.5rem; 
+			transition: 0.6s;
+		}
+		#asian{ 
+			width: 50%; 
+			margin-left:65px; 
+
+		} 
+		#western{ 
+			width: 70%; 
+			margin-left:30px; 
+
+		}
+		#btn1{
+			width: 30%; 
+			margin-left:12rem;
+		} 
+		.link{
+			text-decoration: none;
+		} 
+		.two-columns{ 
+			text-align: center; /*center the table at the middle when they are not inline*/ 
+			font-size: 0px; 
+			padding-top: 40px;
+			padding-bottom: 40px; 
+			padding-right:0px; 
+			padding-left: 0px;
+
+		} 
+		.column{
+			display: inline-block;
+			width: 100%;
+			max-width: 300px; 
+			vertical-align: top; /*so that the stacking ordere is respected*/ 
+			text-align: center; 
+			font-size: 18px; 
+			padding-bottom: 10px; 
+
+		} 
+		.pics{
+			text-decoration: none;
+		}
+		@media (max-width: 600px){ 
+			#btn1{
+			width: 30%; 
+			margin-left:7rem;
+		}  
+	</style>
+</head> 
+<body> 
+	<div class='wrapper'>
+		<table class='table'> 
+			<!--the upper border-->
+			<tr>
+				<td style="background-color:#FF5733;height:40px;max-width:600px"></td> <!--orange colour-->
+			</tr> 
+			<!--the logo section--> 
+			<tr>
+				<td style="height:50px;font-size:25px;text-align:center; "><b>***GEEKY NOOBS***</b></td>
+			</tr>  
+
+		
+			<!--banner photo section--> 
+			<tr class='bannerimage'>
+				<td>
+					<h1>World class cuisine right at your service!!</h1>
+					<a href="#" class="link"> 
+						<p class="btn" id="btn1"><b>ORDER NOW!</b></p> 
+					</a> 	
+				</td>
+			</tr> 
+			
+			<!--one liner section--> 
+			<tr>
+				<td style="height: 50px;background-color:#FF5733;text-align:center;"> 
+					<b>Savour delacacies from drinks to munchies from all across the globe!!</b>
+					
+				</td> 
+			</tr> 
+			<!--two-column section--> 
+			<tr>
+				<td>
+					<table class="two-columns"> <!--table wrapping both the columns--> 
+						<tr>
+							<td>
+								<table class="column"> 
+									<tr>
+										<td>
+											<a href="#"> <img src="food6.jpg" alt="asian cuisine" style="width:300px; max-width:300px height:300px"></a> 
+											<a href="#" class='pics'><p class="btn" id="asian"><b>ASIAN CUISINE</b> </p></a>
+										</td>
+									</tr>
+								</table> 
+								<table class="column">
+									<tr>
+										<td>
+											<a href="#"> <img src="food2.jpg" alt="western cuisine" style="width:300px; max-width:300px;height:300px"></a> 
+											<a href="#" class='pics'><p class="btn" id='western'><b>WESTERN CUISINE</b></p></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+					</table>
+				</td>
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#FF5733; width:600px;font-size:22px;color:black;text-align:center; border-bottom:solid; border-color:#FDDA0D;padding: 15px; border-width:10px"><b>DRINKS AND MOCKTAILS</b></td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#FF5733; width:600px;height:15px;color:black;text-align:center;margin-bottom:2px;border-bottom:solid; border-color:#FDDA0D;padding: 15px; border-width:10px;font-size:22px;"><b>LUNCH,BREAKFAST,DINNER</b></td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#FF5733; width:600px;height:15px;color:black;text-align:center;margin-bottom:2px;border-bottom:solid; border-color:#FDDA0D;padding: 15px; border-width:10px;font-size:22px;"><b>DESSERTS</b></td>
+				
+			</tr> 
+			<tr style="margin-bottom:20px"> 
+				<td style="background-color:#FF5733; width:600px;height:10px;color:black;text-align:center;padding: 10px; margin-bottom:2px;border-width:10px;font-size:22px;">
+					<a href ="https://www.instagram.com"> 
+						<i class="fab fa-instagram fa-x"style="color:black;padding-right:5px" ></i>
+					</a>
+					<a href="https://www.discord.com">
+						<i class="fab fa-discord fa-x" style="color:black;padding-right:5px"></i>
+					</a>
+					<a href="https://www.twitter.com">
+						<i class="fab fa-twitter fa-x" style="color:black;padding-right:5px"></i>
+					</a> 
+					<div id='copyright' style="font-size: 15px;text-align:left;padding-right:5px;color: black;">&copy; 2021geekynoobspvt.ltd</div>
+				</td>
+				
+			</tr>
+
+
+			
+		</table>
+		
+	</div>
+
+</body>
+</html>
